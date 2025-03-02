@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basavaraj's Portfolio</title>
+    <link href="header.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo1.png" alt="Logo" /> 
+            Basavaraj Hulihalli
+        </div>
+        <div class="nav-links">
+            <a class="active" href="#">Home</a>
+            <a href="landing.html">About</a>
+            <a href="landing.html">Skills</a>
+            <a href="landing.html">Education</a>
+            <a href="landing.html">Projects</a>
+            <a href="landing.html">Experience</a>
+            <a href="landing.html">Contact</a>
+        </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</header>
+
+
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>
+
+</body>
+</html>

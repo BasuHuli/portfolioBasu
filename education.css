@@ -1,0 +1,82 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0e7ff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    color: #4a00e0;
+    margin: 0;
+}
+
+.header h1 i {
+    margin-right: 10px;
+}
+
+.header p {
+    font-size: 1em;
+    color: #333;
+    margin: 5px 0 0;
+}
+
+.education-item {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.education-item img {
+    width: 100%;
+    max-width: 200px;
+    object-fit: cover;
+}
+
+.education-content {
+    padding: 20px;
+    flex: 1;
+}
+
+.education-content h2 {
+    font-size: 1.5em;
+    color: #1a202c;
+    margin: 0 0 10px;
+}
+
+.education-content p {
+    font-size: 1em;
+    color: #4a5568;
+    margin: 0 0 10px;
+}
+
+.education-content .status {
+    font-size: 1em;
+    color: #38a169;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .education-item {
+        flex-direction: column;
+    }
+    .education-item img {
+        max-width: 100%;
+    }
+}

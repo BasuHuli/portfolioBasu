@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #003366;
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 800px;
+            width: 100%;
+            color: black;
+        }
+
+        .title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .title i {
+            color: #003366;
+            margin-right: 10px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .project {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .project i {
+            font-size: 50px;
+            color: #003366;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .projects {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <i class="fas fa-project-diagram"></i>
+            Projects
+        </div>
+        <div class="projects">
+            <div class="project">
+                <i class="fas fa-car"></i>
+                <p>Car Service Reminder (PHP)</p>
+            </div>
+            <div class="project">
+                <i class="fas fa-shopping-cart"></i>
+                <p>Ecommerce website</p>
+            </div>
+            <div class="project">
+                <i class="fas fa-user-shield"></i>
+                <p>Bhoomi Admin Page</p>
+            </div>
+            <div class="project">
+                <i class="fas fa-mobile-alt"></i>
+                <p>Mobile & Web UI (Figma)</p>
+            </div>
+            <div class="project">
+                <i class="fas fa-image"></i>
+                <p>Instagram Poster Design</p>
+            </div>
+            <div class="project">
+                <i class="fas fa-code"></i>
+                <p>Web Pages Frontend</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
